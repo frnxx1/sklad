@@ -1,0 +1,120 @@
+/* ЗАДНИЙ ФОН СТРАНИЦЫ */
+
+body::before {
+	content: '';
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url(../img/osnova.jpg) center center no-repeat;
+	background-size: cover;
+	filter: blur(4px);
+}
+
+
+
+/* -------------------- ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ -------------------- */
+
+/* ОБОЛОЧКА ПАНЕЛИ НАВИГАЦИИ */
+
+header {
+	max-width: 85%;
+	margin: 20px auto 20px auto;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+nav {
+	display: flex;
+}
+
+
+
+/* ЛОГОТИП НА ПАНЕЛИ НАВИГАЦИИ */
+
+.menu__logo {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.menu__logo img {
+	width: 160px;
+	margin: 10px;
+}
+
+
+
+/* КНОПКИ РАЗДЕЛОВ НА ПЕНЕЛИ НАВИГАЦИИ */
+
+.menu__btn {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.menu__btn a {
+	padding: 15px;
+	margin: 5px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #575757;
+}
+
+.menu__btn a:hover {
+	border-bottom: 3px solid #16a800;	
+	color: #16a800;
+}
+
+.menu__btn .active {
+	color: #16a800;
+}
+
+
+
+/* КНОПКИ УПРАВЛЕНИЯ НА ПЕНЕЛИ НАВИГАЦИИ */
+
+.menu__control {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.login__btn {
+	width: 60px;
+	padding: 10px;
+	fill: #575757;
+}
+
+.login__btn:hover {
+	background-color: #16a800;
+	fill: #fff;
+}
+
+.cart__btn {
+	width: 60px;
+	padding: 10px;
+	fill: #575757;
+}
+
+.cart__btn:hover {
+	background-color: #16a800;
+	fill: #fff;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+
+/* -------------------- ******* ******* ******** -------------------- */
+
+/* ОБОЛОЧКА ВСЕЙ СТРАНИЦЫ */
+
+.block {
+	max-width: 85%;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 15px;
+}

@@ -1,0 +1,396 @@
+
+/* ЗАДНИЙ ФОН СТРАНИЦЫ */
+
+body::before {
+	content: '';
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url(../img/osnova.jpg) center center no-repeat;
+	background-size: cover;
+	filter: blur(4px);
+}
+
+
+
+/* -------------------- ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ -------------------- */
+
+/* ОБОЛОЧКА ПАНЕЛИ НАВИГАЦИИ */
+
+header {
+	max-width: 85%;
+	margin: 20px auto 20px auto;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.nav__up {
+	display: flex;
+}
+
+
+
+/* ЛОГОТИП НА ПАНЕЛИ НАВИГАЦИИ */
+
+.menu__logo {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.menu__logo img {
+	width: 160px;
+	margin: 10px;
+}
+
+
+
+/* КНОПКИ РАЗДЕЛОВ НА ПЕНЕЛИ НАВИГАЦИИ */
+
+.menu__btn {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.menu__btn a {
+	padding: 15px;
+	margin: 5px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #575757;
+}
+
+.menu__btn a:hover {
+	border-bottom: 3px solid #16a800;	
+	color: #16a800;
+}
+
+
+
+/* КНОПКИ УПРАВЛЕНИЯ НА ПЕНЕЛИ НАВИГАЦИИ */
+
+.menu__control {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.login__btn {
+	width: 60px;
+	padding: 10px;
+	fill: #16a800;
+}
+
+.login__btn:hover {
+	background-color: #16a800;
+	fill: #fff;
+}
+
+.cart__btn {
+	width: 60px;
+	padding: 10px;
+	fill: #575757;
+}
+
+.cart__btn:hover {
+	background-color: #16a800;
+	fill: #fff;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+
+/* -------------------- ФОРМА ВХОДА И РЕГИСТРАЦИИ -------------------- */
+
+/*-вход-*/
+
+/* ОБОЛОЧКА ФОРМЫ ВХОДА */
+
+.log__section {
+	width: 40%;
+	height: 450px;
+	margin: 60px auto;
+	background-color: #fff;
+	border-radius: 15px;
+
+}
+
+.log__form {
+	padding: 50px 50px 0 50px;
+}
+
+
+
+/* ЗАГОЛОВОК ФОРМЫ ВХОДА */
+
+.log__textbox {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.log__textbox h1 {
+	padding: 5px;
+	font-weight: 600;
+	font-size: 50px;
+	color: #000;
+}
+
+.log__textbox p {
+	padding: 5px;
+	font-size: 15px;
+	color: #575757;
+}
+
+
+
+/* ПОЛЯ ДЛЯ ВВОДА ФОРМЫ ВХОДА */
+
+.log__inputbox input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #000;
+	font-size: 18px;
+	transition: 0.2s ease;
+
+}
+
+.log__inputbox input:valid {
+	border-bottom: 2px solid #16a800;
+}
+
+
+
+/* КНОПКА ФОРМЫ ВХОДА */
+
+.log__inbtn {
+	width: 100%;
+	height: 45px;
+	margin: 20px 0 20px 0;
+	border-radius: 4px;
+	font-size: 20px;
+	transition: 0.2s ease;
+}
+
+.log__inbtn:hover {
+	background-color: #16a800;
+	color: #fff;
+}
+
+
+
+/* ЗАПОМИНАНИЕ И ВОССТАНОВЛЕНИЕ ФОРМЫ ВХОДА */
+
+.log__rememberbox {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	font-size: 16px;
+	color: #575757;
+}	
+
+.log__rememberbox input:hover {
+	cursor: pointer;
+}
+
+.log__rememberbox label:hover {
+	color: #13358a;
+	cursor: pointer;
+}
+
+.log__rememberbox a {
+	color: #575757;
+	transition: 0.2s ease;
+}
+
+.log__rememberbox a:hover {
+	color: #13358a;
+}
+
+
+
+/* КНОПКА ПЕРЕКЛЮЧЕНИЯ ФОРМЫ НА РЕГИСТРАЦИЮ */
+
+.log__signbtn {
+	font-size: 16px;
+	text-align: center;
+}
+
+.log__signbtn a {
+	border-bottom: 1px solid #000;
+	color: #000;
+	transition: 0.2s ease;
+}
+
+.log__signbtn a:hover {
+	border-bottom: 1px solid #16a800;
+	color: #16a800;
+	cursor: pointer;
+}
+
+
+
+/*-регистрация-*/
+
+/* ОБОЛОЧКА ФОРМЫ РЕГИСТРАЦИИ */
+
+.reg__section {
+	display: none;
+	width: 40%;
+	height: 450px;
+	margin: 60px auto;
+	background-color: #fff;
+	border-radius: 15px;
+
+}
+
+.reg__form {
+	padding: 50px 50px 0 50px;
+}
+
+
+
+/* ЗАГОЛОВОК ФОРМЫ РЕГИСТРАЦИИ */
+
+.reg__textbox {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.reg__textbox h1 {
+	padding: 5px;
+	font-weight: 600;
+	font-size: 50px;
+	color: #000;
+}
+
+.reg__textbox p {
+	padding: 5px;
+	font-size: 15px;
+	color: #575757;
+}
+
+
+
+/* ПОЛЯ ДЛЯ ВВОДА ФОРМЫ РЕГИСТРАЦИИ */
+
+.reg__inputbox input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #000;
+	font-size: 18px;
+	transition: 0.2s ease;
+
+}
+
+.reg__inputbox input:valid {
+	border-bottom: 2px solid #16a800;
+}
+
+
+
+/* КНОПКА ФОРМЫ РЕГИСТРАЦИИ */
+
+.reg__inbtn {
+	width: 100%;
+	height: 45px;
+	margin: 20px 0 20px 0;
+	border-radius: 4px;
+	font-size: 20px;
+	transition: 0.2s ease;
+}
+
+.reg__inbtn:hover {
+	background-color: #16a800;
+	color: #fff;
+}
+
+
+
+/* ЗАПОМИНАНИЕ И ВОССТАНОВЛЕНИЕ ФОРМЫ РЕГИСТРАЦИИ */
+
+.reg__rememberbox {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	font-size: 16px;
+	color: #575757;
+}	
+
+.reg__rememberbox input:hover {
+	cursor: pointer;
+}
+
+.reg__rememberbox label:hover {
+	color: #13358a;
+	cursor: pointer;
+}
+
+
+
+/* КНОПКА ПЕРЕКЛЮЧЕНИЯ РЕГИСТРАЦИИ НА ВХОД */
+
+.reg__logbtn {
+	font-size: 16px;
+	text-align: center;
+}
+
+.reg__logbtn a {
+	border-bottom: 1px solid #000;
+	color: #000;
+	transition: 0.2s ease;
+}
+
+.reg__logbtn a:hover {
+	border-bottom: 1px solid #16a800;
+	color: #16a800;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ -------------------- */
+
+/* ОБОЛОЧКА ПАНЕЛИ НАВИГАЦИИ */
+
+footer {
+	margin: 20px auto 20px auto;
+	max-width: 85%;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.nav__down {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- */
